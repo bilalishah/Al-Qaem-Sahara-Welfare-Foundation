@@ -29,7 +29,7 @@
 			<div class="row">
 				<div class="col-md-6 d-flex align-items-center">
 					<p class="mb-0 phone pl-md-2">
-						<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
+						<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a>
 						<a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
 					</p>
 				</div>
@@ -67,7 +67,7 @@
 		</div>
 	</nav>
 	<!-- END nav -->
-	
+
 	<section class="hero-wrap js-fullheight">
 		<div class="home-slider js-fullheight owl-carousel">
 			<div class="slider-item js-fullheight" style="background-image:url(images/bg_1.jpg);">
@@ -605,139 +605,228 @@
 			</div>
 		</div>
 	</section>
-<section class="ftco-section">
-    <div class="container">
-        <div class="row justify-content-center pb-5 mb-3">
-            <div class="col-md-7 heading-section text-center ftco-animate">
-                <span class="subheading">Our Testimonials</span>
-                <h2>What They Say?</h2>
-            </div>
-        </div>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5 mb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<span class="subheading">Our Testimonials</span>
+					<h2>What They Say?</h2>
+				</div>
+			</div>
 
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="testimonial-box text-center p-4">
-                    <div id="testimonial"></div>
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<div class="testimonial-box text-center p-4">
+						<div id="testimonial"></div>
 
-                    <div class="btn-area mt-4 d-flex justify-content-center gap-3">
-                        <button class="nav-btn btn-prev" onclick="prevTestimonial()">&#10094;</button>
-                        <button class="nav-btn btn-next" onclick="nextTestimonial()">&#10095;</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+						<div class="btn-area mt-4 d-flex justify-content-center gap-3">
+							<button class="nav-btn btn-prev" onclick="prevTestimonial()">&#10094;</button>
+							<button class="nav-btn btn-next" onclick="nextTestimonial()">&#10095;</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<style>
-    .testimonial-box {
-        background: #f5f5f5;
-        border-radius: 12px;
-        width: 100%;
-        max-width: 700px; /* Fixed max width */
-        min-width: 500px; /* Optional: minimum width */
-        height: 400px; /* Fixed height */
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 35px;
-        box-sizing: border-box;
-    }
+	<style>
+		.testimonial-box {
+			background: #f5f5f5;
+			border-radius: 12px;
+			width: 90%;
+			max-width: 700px;
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 25px;
+			box-sizing: border-box;
+			min-height: 350px;
+		}
 
-    .profile-img {
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 15px;
-    }
+		.profile-img {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			object-fit: cover;
+			margin-bottom: 15px;
+		}
 
-    .name {
-        color: #004c97;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
+		.name {
+			color: #004c97;
+			font-weight: bold;
+			margin-bottom: 5px;
+			font-size: 1.1rem;
+		}
 
-    .designation {
-        font-size: 14px;
-        color: #555;
-        margin-bottom: 15px;
-    }
+		.designation {
+			font-size: 0.9rem;
+			color: #555;
+			margin-bottom: 15px;
+		}
 
-    .message {
-        font-size: 16px;
-        color: #333;
-        line-height: 1.6;
-    }
+		.message {
+			font-size: 1rem;
+			color: #333;
+			line-height: 1.5;
+		}
 
-    .nav-btn {
-        width: 45px;
-        height: 45px;
-        border-radius: 10px;
-        border: none;
-        background: #fff;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        font-size: 24px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
+		.nav-btn {
+			width: 45px;
+			height: 45px;
+			border-radius: 10px;
+			border: none;
+			background: #fff;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+			font-size: 24px;
+			cursor: pointer;
+			transition: 0.3s;
+		}
 
-    .nav-btn:hover { transform: scale(1.1); }
-    .btn-next { background: #28a745; color: white; }
-</style>
+			.nav-btn:hover {
+				transform: scale(1.1);
+			}
 
-<script>
-    const data = [
-        {
-            img: "https://i.ibb.co/7yH0mB7/profile.png",
-            name: "Asif Ismail",
-            job: "(C.O.O & Director, Premier Cables Pvt. Ltd)",
-            msg: `When we talk about serving humanity, no second thought occurs other than Al-Qaem Sahara Welfare Foundation. 
-                  Al-Qaem Sahara is doing a tremendous job in terms of everything they do for a troubled humanity.`
-        },
-        {
-            img: "https://i.pravatar.cc/150?img=12",
-            name: "Ahmed Khan",
-            job: "(Businessman)",
-            msg: `Al-Qaem Sahara is one of the best welfare organizations helping thousands of families every month.`
-        },
-        {
-            img: "https://i.pravatar.cc/150?img=33",
-            name: "Dr. Sara Malik",
-            job: "(Social Worker)",
-            msg: `Their contribution to education, ration programs and healthcare is truly remarkable.`
-        }
-    ];
+		.btn-next {
+			background: #28a745;
+			color: white;
+		}
 
-    let index = 0;
+		/* Mobile Responsiveness */
+		@media (max-width: 768px) {
+			.testimonial-box {
+				width: 95%;
+				padding: 20px;
+				min-height: auto;
+			}
 
-    function showSlide() {
-        const t = document.getElementById("testimonial");
-        if (!t) return;
+			.profile-img {
+				width: 70px;
+				height: 70px;
+			}
 
-        t.innerHTML = `
-            <img src="${data[index].img}" class="profile-img">
-            <h3 class="name">${data[index].name}</h3>
-            <p class="designation">${data[index].job}</p>
-            <p class="message">${data[index].msg}</p>
-        `;
-    }
+			.name {
+				font-size: 1rem;
+			}
 
-    function nextTestimonial() {
-        index = (index + 1) % data.length;
-        showSlide();
-    }
+			.designation {
+				font-size: 0.85rem;
+			}
 
-    function prevTestimonial() {
-        index = (index - 1 + data.length) % data.length;
-        showSlide();
-    }
+			.message {
+				font-size: 0.95rem;
+			}
 
-    document.addEventListener("DOMContentLoaded", showSlide);
-</script>
-<section class="ftco-section">
+			.nav-btn {
+				width: 40px;
+				height: 40px;
+				font-size: 20px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.profile-img {
+				width: 60px;
+				height: 60px;
+			}
+
+			.name {
+				font-size: 0.95rem;
+			}
+
+			.designation {
+				font-size: 0.8rem;
+			}
+
+			.message {
+				font-size: 0.9rem;
+			}
+
+			.nav-btn {
+				width: 35px;
+				height: 35px;
+				font-size: 18px;
+			}
+		}
+	</style>
+
+	<script>
+		const data = [
+			{
+				img: "https://i.ibb.co/7yH0mB7/profile.png",
+				name: "Asif Ismail",
+				job: "(C.O.O & Director, Premier Cables Pvt. Ltd)",
+				msg: `When we talk about serving humanity, no second thought occurs other than Al-Qaem Sahara Welfare Foundation.
+					  Al-Qaem Sahara is doing a tremendous job in terms of everything they do for a troubled humanity.`
+			},
+			{
+				img: "https://i.pravatar.cc/150?img=12",
+				name: "Ahmed Khan",
+				job: "(Businessman)",
+				msg: `Al-Qaem Sahara is one of the best welfare organizations helping thousands of families every month.`
+			},
+			{
+				img: "https://i.pravatar.cc/150?img=33",
+				name: "Dr. Sara Malik",
+				job: "(Social Worker)",
+				msg: `Their contribution to education, ration programs and healthcare is truly remarkable.`
+			}
+		];
+
+		let index = 0;
+
+		function showSlide() {
+			const t = document.getElementById("testimonial");
+			if (!t) return;
+
+			t.innerHTML = `
+				<img src="${data[index].img}" class="profile-img">
+				<h3 class="name">${data[index].name}</h3>
+				<p class="designation">${data[index].job}</p>
+				<p class="message">${data[index].msg}</p>
+			`;
+		}
+
+		function nextTestimonial() {
+			index = (index + 1) % data.length;
+			showSlide();
+		}
+
+		function prevTestimonial() {
+			index = (index - 1 + data.length) % data.length;
+			showSlide();
+		}
+
+		document.addEventListener("DOMContentLoaded", () => {
+			showSlide();
+
+			// Touch Swipe Support
+			const tBox = document.getElementById("testimonial");
+			let startX = 0;
+			let endX = 0;
+
+			tBox.addEventListener("touchstart", (e) => {
+				startX = e.touches[0].clientX;
+			});
+
+			tBox.addEventListener("touchmove", (e) => {
+				endX = e.touches[0].clientX;
+			});
+
+			tBox.addEventListener("touchend", () => {
+				if (startX - endX > 50) {       // swipe left
+					nextTestimonial();
+				} else if (endX - startX > 50) { // swipe right
+					prevTestimonial();
+				}
+				startX = 0;
+				endX = 0;
+			});
+		});
+	</script>
+
+	<section class="ftco-section">
 		<div class="container ">
 			<div class="row justify-content-center pb-5 mb-3">
 				<div class="col-md-7 heading-section text-center ftco-animate">
@@ -943,37 +1032,40 @@
 			<div class="row mt-5">
 				<div class="col-md-12 text-center">
 
-					<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-					</div>
+					<p class="copyright">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
 				</div>
 			</div>
-		</footer>
-
-		
-		
-
-		<!-- loader -->
-		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+		</div>
+	</footer>
 
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery-migrate-3.0.1.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.easing.1.3.js"></script>
-		<script src="js/jquery.waypoints.min.js"></script>
-		<script src="js/jquery.stellar.min.js"></script>
-		<script src="js/jquery.animateNumber.min.js"></script>
-		<script src="js/bootstrap-datepicker.js"></script>
-		<script src="js/jquery.timepicker.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/scrollax.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-		<script src="js/google-map.js"></script>
-		<script src="js/main.js"></script>
-		
-	</body>
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
 	</html>
